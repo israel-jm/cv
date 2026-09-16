@@ -66,9 +66,9 @@ details[open] .plus{color:var(--accent);transform:rotate(45deg)}.detail{grid-col
 footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--line);display:flex;justify-content:space-between}
 @media(max-width:800px){.nav{display:none}.hero{min-height:auto;padding:85px 0}.grid2,.edu,.projects{grid-template-columns:1fr}.stack{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:10px}.timeline{margin-left:0}summary{grid-template-columns:1fr auto}.date{grid-column:1}.detail{grid-column:1}.shell,.topbar{width:min(var(--max),calc(100% - 28px))}}
 @media(max-width:520px){h1{font-size:3.25rem}.stack{grid-template-columns:1fr}.topbar{top:7px}.hero-lead{font-size:1.05rem}.profile-wrap{flex-direction:column;align-items:flex-start;gap:14px}}
-@media print{
- @page { margin: 0.8cm; }
- body{background:#fff;color:#000;font-size:9pt;line-height:1.25}.topbar,.actions,.hero:before,.kicker,.plus,body::before,#contacto{display:none!important}
+@media print{ body{font-size:9.5pt; line-height:1.3;} h1{font-size:20pt;} h2{font-size:12pt;} h3{font-size:10pt;} .hero-lead{font-size:10pt;} p{margin:4px 0;} .timeline details{margin-bottom:2px; padding-bottom:2px;} .card{padding:6px; margin-bottom:6px;}  .section-head{margin-bottom:8px;} section{margin-bottom:10px;padding:10px;} .card{padding:10px;margin-bottom:10px;} 
+ @page { margin: 0.5cm; }
+ body{background:#fff;color:#000;font-size:9pt;line-height:1.25}#tecnologia, .topbar, .actions,.hero:before,.kicker,.plus,body::before,#contacto{display:none!important}
  .print-contact{display:block!important; font-size:10pt; margin-top:4px; color:#444;}
  .print-contact a {color:#444; text-decoration:none;}
  #formacion{page-break-before:always;}.shell{width:100%}
@@ -87,13 +87,13 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
  .value .num{font-size:12pt;margin-bottom:0px}
  .target span,.tag{border:1px solid #ccc;background:none;color:#000;padding:0px 4px;font-size:8pt;display:inline-block;margin:1px}
  .timeline{margin-left:0;border:none}
- details{border-bottom:1px solid #eee;margin-left:0;padding-bottom:5px;margin-bottom:5px;page-break-inside:avoid}
+ details{border-bottom:1px solid #eee;margin-left:0;padding-bottom:5px;margin-bottom:5px;page-break-inside:auto}
  summary{grid-template-columns:85px 1fr;gap:8px}
  .date{font-size:8pt}.role{font-size:10pt}.company{font-size:9pt;color:#333}
  .detail{grid-column:1 / -1;margin-top:2px;padding:0}.detail ul{margin-left:12px}.detail li{margin-top:2px;font-size:9pt}
  .project{min-height:0}.project .number{display:none}.project h3{font-size:10pt;margin:2px 0}.project p{display:none}.project .tech{padding-top:2px;font-size:8pt;color:#666}
  .edu{grid-template-columns:1fr 1fr;gap:10px}
- .edu-item{padding:3px 0;border-bottom:1px solid #eee;page-break-inside:avoid}.edu-item strong{font-size:9pt}.edu-item small{font-size:8pt;color:#333}
+ .edu-item{padding:3px 0;border-bottom:1px solid #eee;page-break-inside:auto}.edu-item strong{font-size:9pt}.edu-item small{font-size:8pt;color:#333}
  .contact{padding:0}.contact h2{font-size:13pt}.contact p{font-size:9pt;margin:6px 0}
  footer{padding:8px 0;border-top:1px solid #ddd;font-size:8pt;page-break-before:avoid}
  .timeline summary{pointer-events:none}
@@ -136,6 +136,7 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
       <span class="pill">SDR / Inside Sales</span>
       <span class="pill">Preventa IT</span>
       <span class="pill">Gestor de Cuentas</span>
+      <span class="pill">Oficina T&eacute;cnica / Presupuestos</span>
     </div>
   </div>
 </section>
@@ -146,7 +147,7 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
       <div class="kicker">01 · Perfil</div>
       <h2>Un perfil comercial polivalente y resolutivo.</h2>
     </div>
-    <p>Aporto la "calle", resiliencia y el trato directo del vendedor veterano, sumado a la capacidad analítica de un perfil tecnológico. Esto me permite vender con autoridad en cualquier sector (industrial, retail, IT).</p>
+    <p>Aporto la "calle", resiliencia y el trato directo del vendedor veterano, sumado a la capacidad analítica de un perfil tecnológico. Esto me permite tanto defender ventas con autoridad en cualquier sector (industrial, retail, IT), como asumir roles de Oficina Técnica para el cálculo de mediciones, lectura de planos y elaboración de presupuestos complejos.</p>
   </div>
   <div class="grid2">
     <article class="card value">
@@ -171,6 +172,7 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
       <span>Tech Sales / Preventa</span>
       <span>Comercial Sector Industrial</span>
       <span>Inside Sales</span>
+      <span>Oficina T&eacute;cnica / Presupuestos</span>
     </div>
   </div>
 </section>
@@ -233,7 +235,7 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
       <div class="detail">
         <ul>
           <li>Gestión integral de compras B2B y negociación dura con proveedores industriales y contratistas.</li>
-          <li>Elaboración de presupuestos técnicos, control de márgenes, viabilidad de costes y presentación de ofertas a clientes corporativos.</li>
+          <li>Elaboración de presupuestos técnicos (materiales de aislamiento, lana de roca, pladur, pintura intumescente, etc.), control de márgenes, viabilidad de costes y presentación de ofertas a clientes corporativos.</li>
           <li>Coordinación directa de 3 equipos técnicos en campo para la ejecución de proyectos de protección contraincendios.</li>
         </ul>
       </div>
@@ -327,8 +329,9 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
       <div>
         <div class="edu-item"><span class="year">2010 · 50 h</span><strong>Iniciación a creación de páginas web (Dreamweaver)</strong><small>CEA</small></div>
         <div class="edu-item"><span class="year">2009 · 50 h</span><strong>Formador de Formadores (Especialidad FPO)</strong><small>CEA</small></div>
-        <div class="edu-item"><span class="year">2007 · 214 h</span><strong>Diseño y modificación de planos 2D/3D (AutoCAD)</strong><small>ASAJA</small></div>
-        <div class="edu-item"><span class="year">2004 · 950 h</span><strong>Programador de Aplicaciones Informáticas</strong><small>USO</small></div>
+        <div class="edu-item"><span class="year">2007 &bull; 214 h</span><strong>Dise&ntilde;o y modificaci&oacute;n de planos 2D/3D (AutoCAD)</strong><small>ASAJA</small></div>
+        <div class="edu-item"><span class="year">2003 &bull; 660 h</span><strong>Infografista de Medios Audiovisuales (Dise&ntilde;o 3D)</strong><small>IFES</small></div>
+        <div class="edu-item"><span class="year">2004 &bull; 950 h</span><strong>Programador de Aplicaciones Inform&aacute;ticas</strong><small>USO</small></div>
       </div>
     </div>
   </div>
@@ -429,7 +432,7 @@ footer{padding:26px 0;color:#77787b;font-size:.82rem;border-top:1px solid var(--
 
 <footer class="shell">
   <span>© Israel Jiménez Matamoros</span>
-  <span>Ventas B2B · Desarrollo de Negocio · Account Manager · Ejecutivo Comercial</span>
+  <span>Ventas B2B · Desarrollo de Negocio · Account Manager · Oficina Técnica</span>
 </footer>
 
 <script>
@@ -446,6 +449,19 @@ function printCV() {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
